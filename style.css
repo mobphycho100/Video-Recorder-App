@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+
+.bg-container {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    /* align-items: center; */
+}
+
+.main-container {
+    width: 95%;
+    max-width: 1020px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    background-color: #00000046;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.482);
+}
+
+#video {
+    width: 100%;
+    max-height: 70%;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.422);
+    border-radius: 30px;
+    /* filter: hue-rotate(90deg); */
+    /* aspect-ratio: 16/9; */
+}
+
+/* No filter */
+.filter-none {
+    filter: none;
+}
+
+/* Grayscale */
+.filter-grayscale {
+    filter: grayscale(1);
+    /* 1 is full grayscale, values between 0-1 for partial */
+}
+
+/* Sepia */
+.filter-sepia {
+    filter: sepia(1);
+    /* 1 is full sepia effect, values between 0-1 for partial */
+}
+
+/* Invert */
+.filter-invert {
+    filter: invert(1);
+    /* 1 is fully inverted, values between 0-1 for partial inversion */
+}
+
+/* Brightness */
+.filter-brightness {
+    filter: brightness(1.4);
+    /* Adjust as desired, 1 is normal, >1 is brighter, <1 is darker */
+}
+
+/* Contrast */
+.filter-contrast {
+    filter: contrast(1.5);
+    /* Adjust as desired, 1 is normal contrast, >1 increases contrast */
+}
+
+/* Saturation */
+.filter-saturation {
+    filter: saturate(1.5);
+    /* 1 is normal saturation, >1 for more, <1 for less saturation */
+}
+
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+.btn-cover {
+    border: solid 2.25px rgb(255, 255, 255);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+}
+
+#record-btn {
+    background-color: red;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+#capture-btn {
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.timer {
+    color: white;
+    font-size: 20px;
+    margin-right: 2px;
+}
+
+.hide {
+    display: none;
+}
+
+.flickering-anime {
+    animation: flicker 1s infinite;
+    transition: all ease;
+}
+
+.flicker-once-anime {
+    animation: flicker 1s 1;
+    transition: all ease;
+}
+
+@keyframes flicker {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    color: white;
+}
+
+select {
+    background-color: rgba(255, 255, 255, 0.34);
+    /* text-align: center; */
+}

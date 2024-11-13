@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <meta name="author" content="Pradeep Jat" />
+    <meta property="title" content="Pradeep Jat | Live Picture and Video Recorder" />
+    <meta property="description"
+        content="Pradeep Jat | Play Live, Record Live and Capture Live with several filters" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Video Streaming</title>
+</head>
+
+<body>
+    <div class="bg-container">
+        <div class="main-container">
+            <video controls autoplay id="video">
+                <source src="https://youtu.be/iPjxeY4d0R0" type="video/mp4">
+            </video>
+
+            <div class="btn-container">
+                <div class="timer-container">
+                    <p class="timer">00:00:00</p>
+                </div>
+                <div class="btn-cover">
+                    <div id="record-btn"></div>
+                </div>
+                <div class="btn-cover">
+                    <div id="capture-btn"></div>
+                </div>
+                <div class="filter-container">
+                    <label for="filter">Select Filter</label>
+                    <select name="filter" id="filter">
+                        <option value="none" selected>None</option>
+                        <option value="grayscale">Grayscale</option>
+                        <option value="sepia">Sepia</option>
+                        <option value="invert">Invert</option>
+                        <option value="brightness">Brightness</option>
+                        <option value="contrast">Contrast</option>
+                        <option value="saturate">Saturate</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
